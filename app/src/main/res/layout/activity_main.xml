@@ -29,10 +29,12 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center_vertical|center_horizontal">
-            <ProgressBar android:id="@+id/login_progress"
+
+            <ProgressBar
+                android:id="@+id/login_progress"
                 style="?android:attr/progressBarStyleLarge"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="92dp"
+                android:layout_height="16dp"
                 android:visibility="gone" />
 
             <ScrollView android:id="@+id/login_form"
