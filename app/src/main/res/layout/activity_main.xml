@@ -1,116 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/gradient"
     android:fitsSystemWindows="true"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
-
-
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient">
     <LinearLayout
-        android:layout_width="393dp"
-        android:layout_height="515dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
 
-        android:orientation="vertical">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="72dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="24dp"
-            android:layout_marginTop="8dp"
-            android:contentDescription="@string/todo3"
-            android:src="@drawable/m4" />
-
-        <TextView
-            android:id="@+id/textView12"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/fitwoman1"
-            android:textColor="#FFFFFF"
-            android:textSize="36sp"
-            android:textStyle="bold"
-            app:fontFamily="cursive" />
-
-        <EditText
-            android:id="@+id/MName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
-            android:hint="@string/Mname2511"
-            android:inputType="textEmailAddress"
-            android:maxLines="1"
-            android:singleLine="true"
-            android:textColor="#ffffffff"
-            android:textColorHint="#ffffffff" />
-
-        <EditText
-            android:id="@+id/MEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
-            android:hint="@string/Memail2511"
-            android:imeActionLabel="@string/action_sign_in"
-            android:imeOptions="actionUnspecified"
-            android:inputType="textEmailAddress"
-            android:maxLines="1"
-            android:singleLine="true"
-            android:textColor="#ffffffff"
-            android:textColorHint="#ffffffff" />
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
-            android:background="@color/mc1"
-            android:text="@string/loginMarwa" />
-
-        <TextView
-            android:id="@+id/textView13"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/Mor"
-            android:textColor="#FFFFFF" />
-
-
-        <com.facebook.login.widget.LoginButton
-            android:id="@+id/login_button"
+        <ImageView android:src="@drawable/logo"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="30dp" />
+            android:layout_height="72dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal" />
 
-        <TextView
-            android:id="@+id/signUpTextView"
+
+
+
+        <LinearLayout
+            android:id="@+id/ll2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="-20dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
-            android:autoLink="web"
-            android:text="@string/no_account_yet_create_one2"
-            android:textColor="#ffffffff"
-            android:textSize="24sp" />
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal">
+
+            <ProgressBar
+                android:id="@+id/login_progress"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="92dp"
+                android:layout_height="16dp"
+                android:visibility="gone" />
+
+            <ScrollView android:id="@+id/login_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout android:id="@+id/email_login_form"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <AutoCompleteTextView android:id="@+id/email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/prompt_email"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:layout_marginBottom="10dp"
+                            android:textColorHint="#ffffffff"
+                            android:textColor="#ffffffff" />
+
+                        <EditText android:id="@+id/password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/prompt_password"
+                            android:imeActionLabel="@string/action_sign_in"
+                            android:imeOptions="actionUnspecified"
+                            android:inputType="textPassword"
+                            android:maxLines="1" android:singleLine="true"
+                            android:layout_marginBottom="10dp"
+                            android:textColorHint="#ffffffff"
+                            android:textColor="#ffffffff" />
+
+                        <Button android:id="@+id/email_sign_in_button"
+                            style="?android:textAppearanceSmall"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="@string/action_sign_in"
+                            android:textStyle="bold"
+                            android:textColor="#ffffffff"
+                            android:background="#ff6666"
+                            android:layout_margin="10dp"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom|center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No account yet? Create one"
+                android:id="@+id/signUpTextView"
+                android:autoLink="web"
+                android:textColor="#ffffffff"
+                android:layout_margin="-20dp"/>
+        </LinearLayout>
 
     </LinearLayout>
 
-
-</android.support.constraint.ConstraintLayout>
+</ScrollView>
 
 
