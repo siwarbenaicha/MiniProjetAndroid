@@ -13,4 +13,59 @@
     <string name="age">Age</string>
     <string name="username2">UserName</string>
     <string name="todo">TODO</string>
+    <string name="mhome1">HOME</string>
+    <string name="mfitness1">Fitness</string>
+    <string name="mactivity1">Activities</string>
+    <string name="mdiet1">Diet</string>
+    <string name="mmeals1">Meals</string>
+    <string name="mprofil1">Profil</string>
+    <string name="m_image_drawer">TODO</string>
+    <string name="menu_title">FitWoman Menu</string>
+    <string name="menu_title_second">welcome</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="home_page1">Home page</string>
+    <string name="fitness_page1">Fitness Program For You</string>
+    <string name="activities_page1">What you did today ?</string>
+    <string name="diet_page1">Diet page</string>
+    <string name="meals_page1">Meals page</string>
+    <string name="profil_page1">Profil page</string>
+    <string name="no_account_yet_create_one2">No account yet? Create one</string>
+    <string name="todo3">TODO</string>
+    <string name="todo22">TODO</string>
+    <string name="name22">Name</string>
+    <string name="create_account22">Create Account</string>
+    <string name="loginMarwa">Login</string>
+    <string name="exercice_name">Jumping jacks</string>
+    <string name="exercice_description">Repeat x20 times</string>
+    <string name="exercice_img">TODO</string>
+    <string name="add_activity3">Add Activity</string>
+    <string name="name3">Name</string>
+    <string name="day4">day: yyyy-mm-dd</string>
+    <string name="duration3">Duration: 00:00:00</string>
+    <string name="description3">Description</string>
+    <string name="confirm3">Confirm</string>
+    <string name="mNumberActivities">0</string>
+    <string name="mACTIVITY6">ACTIVITY</string>
+    <string name="mNumberKCAL">0</string>
+    <string name="mkcal6">KCAL</string>
+    <string name="mmy_activities6">My Activities</string>
+    <string name="mtoday6">Today</string>
+    <string name="mcalendar">CALENDAR</string>
+    <string name="madd_new_activity">Add New Activity</string>
+    <string name="mtodoWHAT">TODO</string>
+    <string name="mtodoWHAT2">TODO</string>
+    <string name="mtodoWHAT3">TODO</string>
+    <string name="mtodoWHAT4">TODO</string>
+    <string name="fitwoman1">FitWoman</string>
+    <string name="Mtodo100">TODO</string>
+    <string name="Mor">or</string>
+    <string name="Mname2511">Name</string>
+    <string name="Memail2511">Email</string>
+    <string name="facebook_app_id">301395607144956</string>
+    <string name="fb_login_protocol_scheme">fb301395607144956</string>
+
+
+
+
 </resources>
