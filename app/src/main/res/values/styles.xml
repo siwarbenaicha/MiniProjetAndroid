@@ -6,6 +6,9 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="navigationViewStyle">@style/Widget.Design.NavigationView</item>
+
+
     </style>
     <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
         <item name="android:fontFamily">sans-serif-light</item>
@@ -17,6 +20,16 @@
         <item name="android:fontFamily">sans-serif-light</item>
     </style>
     <color name="accent">#ffffff</color>
+
+
+    <!-- marwa: menu style : hide the action bar -->
+    <style name="AppTheme.NoActionBar" >
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+
+    </style>
 
 
 
